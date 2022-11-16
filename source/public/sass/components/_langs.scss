@@ -1,0 +1,28 @@
+.langs {
+  display: flex;
+}
+
+.langs__item.active {
+  .langs__btn {
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+  }
+}
+
+.langs__btn {
+  @include active;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 24px;
+  background-color: #f5f5f5;
+  border: 1px solid rgba(229, 229, 229, 0.6);
+}
+
+.langs__ico {
+  display: block;
+  width: 24px;
+  height: 20px;
+}

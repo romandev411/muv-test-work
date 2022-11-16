@@ -1,0 +1,21 @@
+.title-sect {
+  text-align: center;
+}
+
+.title-sect__title {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.4;
+  color: $main-color;
+
+  @include media-lg {
+    font-size: 24px;
+  }
+}
+
+.title-sect__subtitle {
+  font-size: 14px;
+  line-height: 1.4;
+  color: $main-color;
+}

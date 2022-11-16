@@ -1,0 +1,25 @@
+.faq {
+  padding-top: 54px;
+  padding-bottom: 70px;
+
+  @include media-lg {
+    padding: 40px 0;
+  }
+}
+
+.faq__wrap {
+  @include content;
+}
+
+.faq__title {
+  margin-bottom: 35px;
+
+  @include media-lg {
+    margin-bottom: 24px;
+  }
+}
+
+.faq__acordeon {
+  max-width: 670px;
+  margin: 0 auto;
+}

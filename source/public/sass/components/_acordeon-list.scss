@@ -1,0 +1,79 @@
+.acordeon-list__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.acordeon-list__item {
+  &.active {
+    .acordeon-list__btn-ico:after {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.acordeon-list__desc {
+  background-color: $light-color;
+  border-radius: 15px;
+}
+
+.acordeon-list__text-wrap {
+  height: 0;
+  overflow: hidden;
+  transition: height $anim;
+}
+
+.acordeon-list__btn {
+  @include active;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: $main-color;
+  line-height: 1.25;
+
+  @include media-lg {
+    font-size: 14px;
+  }
+}
+
+.acordeon-list__btn-text {
+  max-width: 465px;
+}
+
+.acordeon-list__btn-ico {
+  position: relative;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid $brand-color;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 12px;
+    margin: auto;
+    background-color: $brand-color;
+    transition: transform $anim;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+}
+
+.acordeon-list__text {
+  padding: 20px;
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $main-color;
+}
